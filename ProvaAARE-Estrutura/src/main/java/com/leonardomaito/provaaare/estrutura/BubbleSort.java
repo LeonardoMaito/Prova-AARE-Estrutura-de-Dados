@@ -14,11 +14,11 @@ public class BubbleSort {
     void bubbleSort(int arr[]) {
         int n = arr.length;//Armazena o tamanho do array na variável n
         for (int i = 0; i < n - 1; i++) {//Os dois loops percorrem o array
-            for (int j = 0; j < n - i - 1; j++) {//Os ultimos valores i já estão no seu lugar
+            for (int j = 0; j < n - i - 1; j++) {//Os ultimos valores i já estão no seu lugar, logo, esse laço não precisa ir até a ultima posição
                 if (arr[j] > arr[j + 1]) {/* Se a posição lida for maior que a posição seguinte
-                    a ordem dos números é alterada*/
+                    a ordem dos números é alterada, e então o maior número assume a posição seguinte.*/
 
-                    int temp = arr[j];//Variavel temp para auxiliar a troca de posição dos números
+                    int temp = arr[j];//Variavel temp para auxiliar a troca de posição dos números,e assim ajudar na ordenação do array
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
